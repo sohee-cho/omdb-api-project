@@ -4,14 +4,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sohee's OMDB Api App</title>
-    <link rel="stylesheet" href="styles/css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="styles/css/main.css">
+    <title>Sohee's OMDB API App</title>
 </head>
 
 <body>
+<div id="main_content">
+    <h2>Movie Database</h2>
+	<h3 class="about_api">All the information you need on your favorite film!</h3>
+		<input type="text" id="movie" placeholder="Enter movie title" autocomplete="off">
+        <button id="btn">Search</button>
 
-
-<script src="scripts/js/main.js"></script>
+        <div id="container">
+        <h1 id="movie-title">Movie Title</h1>
+		<img id="poster">
+		<p>Year: <span id="year"></span></p>
+		<p>Released: <span id="released"></span></p>
+		<p>Run Time: <span id="runtime"></span></p>
+		<p>Director: <span id="director"></span></p>
+        <p>Writer: <span id="writer"></span></p>
+        <p>Actors: <span id="actors"></span></p>
+		<p>Genre: <span id="genre"></span></p>
+        <p>Plot: <span id="plot"></span></p>
+        <p>Awards: <span id="awards"></span></p>
+		
+	</div>
+</div>	
+<script src="scripts/main.js"></script>
 </body>
 
 </html>
